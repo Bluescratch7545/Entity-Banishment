@@ -1,5 +1,6 @@
 package com.bluescratch.entitybanishment;
 
+import com.bluescratch.entitybanishment.menu.BanishmentMenu;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -9,6 +10,10 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
+import com.bluescratch.entitybanishment.client.BanishmentScreen;
+import com.bluescratch.entitybanishment.register.ModMenus;
+
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = EntityBanishment.MOD_ID, dist = Dist.CLIENT)
@@ -21,5 +26,11 @@ public class ExampleModClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
+
+    }
+
+    @SubscribeEvent
+    public static void registerScreens(RegisterMenuScreensEvent event) {
+        event.register(ModMenus.BANISHMENT_MENU.get(), BanishmentScreen::new);
     }
 }

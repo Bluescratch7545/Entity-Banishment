@@ -1,8 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "top": "entitybanishment:block/banishment_updown_block",
-    "bottom": "entitybanishment:block/banishment_updown_block",
-    "side": "entitybanishment:block/banishment_block"
+    "particle": "entitybanishment:block/banishment_block",
+    "up": "entitybanishment:block/banishment_updown_block",
+    "down": "entitybanishment:block/banishment_updown_block",
+    "north": "entitybanishment:block/banishment_block",
+    "south": "entitybanishment:block/banishment_block",
+    "east": "entitybanishment:block/banishment_block",
+    "west": "entitybanishment:block/banishment_block"
   }
 }

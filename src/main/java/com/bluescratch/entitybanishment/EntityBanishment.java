@@ -1,7 +1,9 @@
 package com.bluescratch.entitybanishment;
 
+import com.bluescratch.entitybanishment.register.ModBlockEntities;
 import com.bluescratch.entitybanishment.register.ModBlocks;
 import com.bluescratch.entitybanishment.register.ModItems;
+import com.bluescratch.entitybanishment.register.ModMenus;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
@@ -32,6 +34,10 @@ public class EntityBanishment {
         ModBlocks.BLOCKS.register(modEventBus);
 
         ModItems.ITEMS.register(modEventBus);
+
+        ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
+
+        ModMenus.MENUS.register(modEventBus);
     }
 
 
