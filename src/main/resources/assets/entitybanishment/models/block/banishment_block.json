@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "top": "entitybanishment:block/banishment_updown_block",
+    "bottom": "entitybanishment:block/banishment_updown_block",
+    "side": "entitybanishment:block/banishment_block"
+  }
+}
