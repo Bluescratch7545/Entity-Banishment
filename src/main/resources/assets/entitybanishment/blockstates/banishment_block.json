@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "entitybanishment:block/banishment_block"
+    }
+  }
+}

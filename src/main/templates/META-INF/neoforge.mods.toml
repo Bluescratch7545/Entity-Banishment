@@ -46,7 +46,10 @@ displayName="${mod_name}" #mandatory
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Example mod description.
+Ever wanted to banish any entity to the shadow realm? No? Meh whatever.
+
+Now you can. No entity dont want can exist now... I guess.
+
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
